@@ -1,0 +1,88 @@
+<?php $this->display('header.phtml'); ?>
+<!-- Page Content -->
+<div class="container">
+  <!-- Page Heading/Breadcrumbs -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">MLCC多层陶瓷电容</h1>
+      <ol class="breadcrumb">
+        <li><a href="/">主页</a></li>
+        <li>产品展示</li>
+        <li class="active">MLCC多层陶瓷电容</li>
+      </ol>
+    </div>
+  </div>
+  <!-- /.row -->
+  <!-- Products -->
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/mlcc/general.jpg" alt="" />
+        <div class="caption">
+          <h3>General</h3>
+          <p>TCC ALL</p>
+          <p>Normal type MLCCs with industry standard size (0402~2220) and rated voltage (4~50V)</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/mlcc/high_capacitance.jpg" alt="" />
+        <div class="caption">
+          <h3>High Capacitance</h3>
+          <p>TCC X5R,X6S,X7R,Y5V</p>
+          <p>High-end group of 'General' products in terms of capacitance, covering 0.22~100uF range</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/mlcc/super_small_size.jpg" alt="" />
+        <div class="caption">
+          <h3>Super Small Size</h3>
+          <p>TCC ALL</p>
+          <p>01005 and 0201 size</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/mlcc/medium_high_voltage.jpg" alt="" />
+        <div class="caption">
+          <h3>Medium-High Voltage</h3>
+          <p>TCC C0G,X7R</p>
+          <p>Rated voltage of 100 to 3000V</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/mlcc/array.jpg" alt="" />
+        <div class="caption">
+          <h3>Array</h3>
+          <p>TCC C0G, X5R, X7R, Y5V</p>
+          <p>H2 element or 4 element</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/mlcc/low_esl.jpg" alt="" />
+        <div class="caption">
+          <h3>Low ESL</h3>
+          <p>TCC X6S,X7S,X5R,X7R</p>
+          <p>0LW reverse type</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+  <?php $this->display('copyright.phtml'); ?>
+</div>
+<!-- /.container -->
+<script>
+var max_height = 0;
+$(document).ready(function(){
+	$('.thumbnail > .caption').each(function(){
+		if($(this).height() > max_height) {
+			max_height = $(this).height();
+		}
+	});
+	$('.thumbnail > .caption').height(max_height);
+});
+</script>
+<?php $this->display('footer.phtml'); ?>

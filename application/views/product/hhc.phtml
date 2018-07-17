@@ -1,0 +1,125 @@
+<?php $this->display('header.phtml'); ?>
+<!-- Page Content -->
+<div class="container">
+  <!-- Page Heading/Breadcrumbs -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">皓华陶瓷电容</h1>
+      <ol class="breadcrumb">
+        <li><a href="/">主页</a></li>
+        <li>产品展示</li>
+        <li class="active">皓华陶瓷电容</li>
+      </ol>
+    </div>
+  </div>
+  <!-- /.row -->
+  <!-- Products -->
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/cc1_cc81.jpg" alt="" />
+        <div class="caption">
+          <h3>CC1系列(Series)</h3>
+          <p>一类高频低压瓷介电容(CC1 Series)</p>
+          <p>较低的介电常数、稳定性高、损耗低、电容量随温度变化近似线性0.5~1000PF</p>
+          <p>产能：30KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/cc1_cc81.jpg" alt="" />
+        <div class="caption">
+          <h3>CC81系列(Series)</h3>
+          <p>一类高频高压瓷介电容(CC81 Series)</p>
+          <p>较低的介电常数、稳定性高、损耗低、电容量随温度变化近似线性0.5~820PF</p>
+          <p>产能：30KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/ct1_ct81.jpg" alt="" />
+        <div class="caption">
+          <h3>CT1系列(Series)</h3>
+          <p>二类低频低压瓷介电容(CT1 Series)</p>
+          <p>容量大、体积小、损耗低220PF~0.022μF</p>
+          <p>产能：30KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/ct1_ct81.jpg" alt="" />
+        <div class="caption">
+          <h3>CT81系列(Series)</h3>
+          <p>二类低频高压瓷介电容(CT81 Series)</p>
+          <p>容量大、体积小、损耗低100PF~0.1μF</p>
+          <p>产能：30KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/cs1.jpg" alt="" />
+        <div class="caption">
+          <h3>CS1系列(Series)</h3>
+          <p>三类低频低压瓷介电容(CS1 Series)</p>
+          <p>介电常数高、体积小、容量大0.0047~0.22μF</p>
+          <p>产能：30KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/ct82.jpg" alt="" />
+        <div class="caption">
+          <h3>CT82系列(Series)</h3>
+          <p>二类低频超高压瓷介电容(CT82 Series)</p>
+          <p>体积小、耐温、耐湿性能好，损耗低100PF~2200PF</p>
+          <p>产能：30KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/ct7.jpg" alt="" />
+        <div class="caption">
+          <h3>CT7系列(Series)</h3>
+          <p>交流安规瓷介电容(CT7 Series)</p>
+          <p>防止天线电波干扰，家用电器电源噪声，防止设备出现故障时产生触电10PF~0.01μF</p>
+          <p>产能：60KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/ct4_cc4.jpg" alt="" />
+        <div class="caption">
+          <h3>CT4系列(Series)</h3>
+          <p>二类径向引线独石瓷介电容(CT4 Series)</p>
+          <p>体积小、容量大，防潮性能、机械强度、耐热性良好100PF~22μF</p>
+          <p>产能：50KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail"> <img src="/img/product/hhc/ct4_cc4.jpg" alt="" />
+        <div class="caption">
+          <h3>CC4系列(Series)</h3>
+          <p>一类径向引线独石瓷介电容(CC4 Series)</p>
+          <p>体积小、容量大，防潮性能、机械强度、耐热性良好0.5PF~0.1μF</p>
+          <p>产能：50KKPCS/Month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+  <?php $this->display('copyright.phtml'); ?>
+</div>
+<!-- /.container -->
+<script>
+var max_height;
+$(function() {
+  max_height = 0;
+	$('.thumbnail > .caption').each(function() {
+		if($(this).height() > max_height) {
+			max_height = $(this).height();
+		}
+	});
+	$('.thumbnail > .caption').height(max_height);
+});
+</script>
+<?php $this->display('footer.phtml'); ?>
